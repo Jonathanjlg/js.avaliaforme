@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão 01</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .img-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            color: aliceblue;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        img {
+
+            margin-left: 450px;
+        }
+
+        ul {
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Nesse episódio quero começar falando sobre o Canvas
+    
+        O canvas é um recurso usado para jogos usando JavaScript. Nele podemos
+        criar imagens e realizar animações.  
+    
+    -->
+
+    <p></p>
+
+
+
+    <ul>
+        <li> <a href="Portalconceitual.html">Portal Conceitual </a></li>
+
+        <li>Portal Estrutural</li>
+        <li>Portal Essencial</li>
+    </ul>
+
+    <div class="img-container">
+
+
+        <canvas id="jogo" width="300" height="300">
+            O browser não suporta a tecnologia
+        </canvas>
+
+    </div>
+
+
+    <script>
+        var canvas = document.getElementById("jogo")
+        var context = canvas.getContext("2d")
+        var imagem = new Image()
+        imagem.src = "img/furao-guerreiro.png"
+
+
+        var mensagem = document.querySelector("p")
+
+        mensagem.innerHTML = `Missões 1 - Encontra Tags `
+
+
+
+    </script>
+</body>
+
+</html>

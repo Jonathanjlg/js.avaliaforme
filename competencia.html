@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de competência</title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="educador.html">inicio</a></li>
+        <li><a href="bloom.html">Bloom</a></li>
+        <li><a href="verbo.html">Verbo</a> </li>
+        <li><a href="competencia.html">competência</a></li>
+        <li><a href="etapa.html">etapa</a></li>
+        <li><a href="missao.html">missão</a></li>
+        <li><a href="historia.html">historia</a></li>
+    </ul>
+
+    <h1>Cadastrp de competência</h1>
+
+    <form>
+        <LAbel>Selecione o nível Bloom</LAbel>
+        <select>
+            <option>Memorizar</option>
+            <option>Compreender</option>
+            <option>Aplicar</option>
+            <option>Analizar</option>
+            <option>Avaliar</option>
+            <option>Criar</option>
+        </select>
+        <br><br>
+        <label for="Verbos">Selecione o verbo</label>
+        <input list="Verbos" name="verbo" id="verbo">
+
+        <datalist id="Verbos">
+            <option value="Lista">
+            <option value="Relembrar">
+            <option value="Reconhecer">
+            <option value="Indentifica">
+            <option value="Localizar">
+            <option value="Descrever">
+            <option value="Citar">
+        </datalist>
+        <br><br>
+
+        <label>Descrição</label><br>
+        <textarea rows="4" cols="50"></textarea>
+      <input type="submit" value="enviar">
+    </form>
+</body>
+
+</html>
